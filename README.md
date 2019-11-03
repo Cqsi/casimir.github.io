@@ -1,3 +1,4 @@
 ## Cqsi
 
-Hello! My name is Cqsi and this is a Github Pages site!
+This is just a test of Github Pages which I might use in the future.
+Current site: https://cqsi.github.io/
