@@ -1,5 +1,5 @@
 ---
-title: /
+title: Casimir's Website
 layout: home
 permalink: /
 ---
