@@ -1,2 +1,1 @@
-# cqsi.github.io
-This is just a test of Github Pages which I might use in the future. Current site: https://cqsi.github.io/
+Just a website in development. It uses Github Pages.
