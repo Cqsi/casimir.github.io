@@ -12,3 +12,8 @@ body {
 p {
     color: white;
 }
+
+.article2 {
+    border: 2px white solid;
+    padding: 20px;
+}
