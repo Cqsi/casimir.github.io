@@ -38,4 +38,19 @@ nav {
     font-size: 14px;
 }
 
+.burger {
+    display: none;
+}
 
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px){
+    body {
+        display: none;
+    }
+}
