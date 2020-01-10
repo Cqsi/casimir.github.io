@@ -2,6 +2,8 @@ const navSlide = () => {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".nav-links");
     const navLinks = document.querySelectorAll(".nav-links li");
+    const firstTime = true;
+
     
     // Toggle nav
     burger.addEventListener("click", ()=>{
@@ -19,3 +21,5 @@ const navSlide = () => {
 }
 
 navSlide();
+
+//transition: transform 0.5s ease-in;
