@@ -104,7 +104,14 @@ function animate() {
 	update();
 	connect();
 	draw();
-	requestAnimationFrame(animate);
+    requestAnimationFrame(animate);
+    
+    ctx.fillStyle = "#FFFFFF";
+    ctx.font = '60px Ubuntu';
+    ctx.textBaseline = 'middle'; 
+    ctx.textAlign = 'center'; 
+
+    ctx.fillText('Casimir Rönnlöf', w/2, h/2);
 }
 
 createParticles();
