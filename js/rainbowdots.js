@@ -128,7 +128,7 @@ function animate() {
 		ctx.font = window.innerWidth / 60 + 'px Ubuntu';
 	}
 
-	ctx.fillText('I like math and programming', w/2, h/2+100);
+	ctx.fillText('I like math and programming', w/2, h/1.75);
 }
 
 createParticles();
