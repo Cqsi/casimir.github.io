@@ -14,7 +14,7 @@ const Tau = Math.PI * 2,
 
 function handleResize(){
 	w = ctx.canvas.width = window.innerWidth;
-	h = ctx.canvas.height = window.innerHeight-70; // -70 because of navbar
+	h = ctx.canvas.height = window.innerHeight;
 }
 window.onresize = () => handleResize();
 handleResize();
