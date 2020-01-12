@@ -112,16 +112,20 @@ function animate() {
 	
 	if(window.innerWidth <= 768){
 		ctx.font = window.innerWidth / 10 + 'px Ubuntu';
+	}else if(window.innerWidth > 768 && window.innerWidth <= 1024){
+		ctx.font = window.innerWidth / 12 + 'px Ubuntu';
 	}else{
 		ctx.font = window.innerWidth / 20 + 'px Ubuntu';
 	}
     
 	ctx.fillText('Casimir Rönnlöf', w/2, h/2);
 	
-	if(window.innerWidth < 768){
+	if(window.innerWidth <= 768){
 		ctx.font = window.innerWidth / 20 + 'px Ubuntu';
+	}else if(window.innerWidth > 768 && window.innerWidth <= 1024){
+		ctx.font = window.innerWidth / 27 + 'px Ubuntu';
 	}else{
-		ctx.font = window.innerWidth / 40 + 'px Ubuntu';
+		ctx.font = window.innerWidth / 60 + 'px Ubuntu';
 	}
 
 	ctx.fillText('I like math and programming', w/2, h/2+100);
