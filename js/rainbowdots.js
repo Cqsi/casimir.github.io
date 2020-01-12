@@ -106,8 +106,13 @@ function animate() {
 	draw();
     requestAnimationFrame(animate);
     
-    ctx.fillStyle = "#FFFFFF";
-    ctx.font = window.innerWidth / 10 + 'px Ubuntu';
+	ctx.fillStyle = "#FFFFFF";
+	if(window.innerWidth < 768){
+		ctx.font = window.innerWidth / 10 + 'px Ubuntu';
+	}else{
+		ctx.font = window.innerWidth / 20 + 'px Ubuntu';
+	}
+    
     ctx.textBaseline = 'middle'; 
     ctx.textAlign = 'center'; 
 
