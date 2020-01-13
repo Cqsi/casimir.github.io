@@ -1,6 +1,7 @@
 // Canvas Setup
 let canvas = document.getElementById("canvas"),
-    ctx = canvas.getContext("2d"),
+	ctx = canvas.getContext("2d"),
+	dpi,
 	w,
 	h,
 	particles = [],
@@ -13,8 +14,11 @@ const Tau = Math.PI * 2,
       Mrandom = Math.random;
 
 function handleResize(){
-	w = ctx.canvas.width = window.innerWidth;
-	h = ctx.canvas.height = window.innerHeight;
+
+	dpi = window.devicePixelRatio;
+
+	w = ctx.canvas.width = window.innerWidth*dpi;
+	h = ctx.canvas.height = window.innerHeight*dpi;
 }
 window.onresize = () => handleResize();
 handleResize();
