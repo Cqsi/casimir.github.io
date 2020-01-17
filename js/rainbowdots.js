@@ -14,11 +14,8 @@ const Tau = Math.PI * 2,
       Mrandom = Math.random;
 
 function handleResize(){
-
-	dpi = window.devicePixelRatio;
-
-	w = ctx.canvas.width = window.innerWidth*dpi;
-	h = ctx.canvas.height = window.innerHeight*dpi;
+	w = ctx.canvas.width = window.innerWidth;
+	h = ctx.canvas.height = window.innerHeight;
 }
 window.onresize = () => handleResize();
 handleResize();
