@@ -29,6 +29,11 @@ canvas {
     font-size: 30px;
 }
 
+#special {
+    margin: auto;
+    width: 80%;
+}
+
 .container .projects {
     margin-top: 30px;
     display: flex;
@@ -36,6 +41,18 @@ canvas {
 
 .container .projects div {
     margin: 30px;
+}
+
+.container .project1 {
+    flex: 1;
+}
+
+.container .project2 {
+    flex: 1; 
+}
+
+.container .project3 {
+    flex: 1;
 }
 
 .container .projects div .projectsheader{
