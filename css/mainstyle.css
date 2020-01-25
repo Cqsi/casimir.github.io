@@ -38,6 +38,11 @@ canvas {
     margin: 50px;
 }
 
+.container .projects div .projectsheader{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
 hr {
     width: 80%;
     margin: auto;
