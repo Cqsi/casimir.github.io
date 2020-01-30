@@ -64,6 +64,16 @@ canvas {
     flex: 1;
 }
 
+.container p a {
+    text-decoration: none;
+    color: rgb(100, 4, 4);
+    transition: 0.5s;
+}
+
+.container p a:hover{
+    color: rgb(150, 150, 150);
+}
+
 #projectsheader {
     margin-bottom: 15px;
     font-size: 25px;
