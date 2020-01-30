@@ -64,12 +64,7 @@ canvas {
     flex: 1;
 }
 
-.container .projects div .projectsheader{
-    margin-bottom: 15px;
-    font-size: 25px;
-}
-
-.container .interests div .projectsheader{
+#projectsheader {
     margin-bottom: 15px;
     font-size: 25px;
 }
@@ -100,7 +95,7 @@ hr {
 .btn i{
    line-height: 75px;
    font-size: 26px;
-   transition: 0.2s linear;
+   transition: 0.3s linear;
 }
 
 .btn:hover i{
@@ -135,6 +130,16 @@ footer {
     line-height: 180%;
 }
 
+footer p a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+footer p a:hover{
+    color: rgb(150, 150, 150);
+}
+
 @media screen and (max-width: 1100px){
     .projects {
         flex-direction: column;
@@ -144,5 +149,14 @@ footer {
 @media screen and (max-width: 1024px){
     .interests {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /*#text {
+        font-size: 14px;
+    }*/
+    #special {
+        width: 100%;
     }
 }
