@@ -31,7 +31,6 @@ canvas {
 
 #special {
     margin: auto;
-    width: 80%;
 }
 
 .container .interests {
@@ -163,10 +162,16 @@ footer p a:hover{
 }
 
 @media screen and (max-width: 600px){
-    /*#text {
-        font-size: 14px;
-    }*/
-    #special {
-        width: 100%;
+    #text {
+        font-size: 18px;
+    }
+    .pheaders {
+        font-size: 28px;
+    }
+    #projectsheader {
+        font-size: 23px;
+    }
+    .container {
+        width: 90%;
     }
 }
