@@ -127,6 +127,10 @@ hr {
    top: -10%;
    left: -10%;
 }
+
+form {
+    margin: auto;
+}
   
 
 footer {
