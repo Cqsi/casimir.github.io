@@ -69,6 +69,12 @@ canvas {
     transition: 0.5s;
 }
 
+.container .tradingview-widget-container {
+    overflow: hidden;
+    margin: auto;
+    margin-top: 30px;
+}
+
 .container .special-link p a:hover{
     color: rgb(150, 150, 150);
 }
