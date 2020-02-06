@@ -130,17 +130,19 @@ hr {
 
 button {
     background-color: #1b1b1b;
+    font-size: 16px;
     margin: auto;
     margin-top: 20px;
     display: block;
     padding: 15px;
     border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-button a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
+button:hover {
+    background-color: #414141;
 }
   
 
