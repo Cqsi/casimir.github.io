@@ -7,6 +7,7 @@ let canvas = document.getElementById("canvas"),
 	particles = [],
 	maxParticles = 100,
 	radius = 5;
+	ctx.translate(0.5, 0.5);
 
 const Tau = Math.PI * 2,
 	  ConnectionDist = 100,
