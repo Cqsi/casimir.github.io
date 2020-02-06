@@ -7,7 +7,7 @@ let canvas = document.getElementById("canvas"),
 	particles = [],
 	maxParticles = 100,
 	radius = 5;
-	//ctx.translate(0.5, 0.5);
+	dpr = window.devicePixelRatio;
 
 const Tau = Math.PI * 2,
 	  ConnectionDist = 100,
@@ -15,8 +15,9 @@ const Tau = Math.PI * 2,
       Mrandom = Math.random;
 
 function handleResize(){
-	w = ctx.canvas.width = window.innerWidth;
-	h = ctx.canvas.height = window.innerHeight;
+	w = ctx.canvas.width = window.innerWidth * dpr;
+	h = ctx.canvas.height = window.innerHeight * dpr;
+	ctx.scale(dpr, dpr);
 }
 window.onresize = () => handleResize();
 handleResize();
