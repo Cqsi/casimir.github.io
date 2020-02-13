@@ -29,9 +29,10 @@ canvas {
 }
 
 .container .pheaders {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Fredoka One', serif;
     text-align: center;
     font-size: 30px;
+    margin-bottom: 20px;
 }
 
 #special {
