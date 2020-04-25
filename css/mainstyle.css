@@ -87,12 +87,14 @@ canvas {
 
 .projectanimation {
     background-color: white;
-    transition: background-color 0.7s;
+    border-radius: 0px;
+    transition: background-color 0.7s, border-radius 0.7s;
 }
 
 .projectanimation:hover {
-    background-color: rgb(209, 199, 199);
-    transition: background-color 0.7s;
+    background-color: rgb(197, 197, 197);
+    border-radius: 50px;
+    transition: background-color 0.7s, border-radius 0.7s;
 }
 
 #projectsheader {
