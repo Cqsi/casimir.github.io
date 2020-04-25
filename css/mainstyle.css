@@ -85,6 +85,16 @@ canvas {
     color: rgb(150, 150, 150);
 }
 
+.projectanimation {
+    background-color: white;
+    transition: background-color 0.8s;
+}
+
+.projectanimation:hover {
+    background-color: rgb(209, 199, 199);
+    transition: background-color 0.8s;
+}
+
 #projectsheader {
     margin-bottom: 15px;
     font-size: 25px;
