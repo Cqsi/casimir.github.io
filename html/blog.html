@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casimir's Blog</title>
-    <link rel="stylesheet" href="../css/blogstyle.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione et amet dolorum illo voluptatibus impedit. Nisi consectetur, perferendis dicta ipsa enim accusamus libero vitae officiis ut inventore tenetur? Est, labore!
-    Commodi consectetur officiis animi, tempore molestiae dicta sit architecto earum, dolor praesentium porro quia illum rem sequi. Quod temporibus ipsa hic, labore laboriosam eveniet officiis, distinctio doloremque error obcaecati placeat.
-    Incidunt natus eligendi odio necessitatibus veritatis animi, laborum soluta explicabo. Quo deserunt amet mollitia, voluptas, quia sunt non esse tempora quaerat ipsum a suscipit tenetur, aut rem officiis delectus quis?
-    Vero non ad ratione, officiis neque delectus itaque qui numquam reprehenderit ab quasi totam cum quibusdam. Quidem, architecto accusamus laudantium nesciunt dolorem corporis veritatis sed ut, nihil harum suscipit amet?</p>
-    <p class="test">$$\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = \prod_p \frac{1}{1-p^{-s}}$$</p>
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
