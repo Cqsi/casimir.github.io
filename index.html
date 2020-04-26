@@ -1,104 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/mainstyle.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <title>Casimir Rönnlöf</title>
-</head>
-<body>
+---
+layout: default
+---
 
-    <canvas id="canvas"></canvas>
-    
-    <section>
-        <div class="container">
-            <div class="special-link">
-                
-                <a href="blog/index.html">click me</a>
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
-                <p id="text"><b>Welcome to my website!</b> I have always wanted to make an own website and here it is, finally. The purpose of this website at the moment is a little unclear, but it is going to mainly serve as portal to all my projects and my current interest (basically what I'm doing at the moment). I'm also including a <a href="html/privacypolicy.html">privacy policy</a> to <a href="https://play.google.com/store/apps/details?id=com.cqsi.android.sanningellerkonsekvens">my application</a> on the play store, but that's about it. I'm probably going to edit the website a lot, so be sure to come back sometime, but for now, have a look around!
-                
-                <!--
-                <br><b>Update 18.4: </b> I'm introducing my <a href="html/blog.html">my blog</a>! It's going to be a place where I'll write about the stuff I've been learning recently (not everything of course), including math, physics and programming. Don't expect me to be active!</p>
-                -->
-                <div class="middle">
-                    <a class="btn" href="https://twitter.com/casimirronnlof" target="_blank">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="btn" href="https://www.youtube.com/channel/UCSjnIAGo6hxzUAJjNIeT_rg" target="_blank">
-                      <i class="fab fa-youtube"></i>
-                    </a>
-                    <a class="btn" href="https://github.com/Cqsi" target="_blank">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a class="btn" href="mailto:casimirr04@gmail.com" target="_blank">
-                        <i class="fas fa-envelope-square"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <section>
-        <div class="container">
-            <p class="pheaders">My Interests</p>
-            <div class="interests" id="special">
-                <div class="projectanimation">
-                    <div class="project1">
-                        <p id="projectsheader">Math & Physics</p>
-                        <p id="text">I have liked mathematics and physics, since, uhm I don't know lol. Even though I know much more math than physics, I still like physics because of how well it can describe the universe around us, using the same things we learn in math.</p class="text">
-                    </div>
-                </div>
-                <div class="projectanimation">
-                    <div class="project2">
-                        <p id="projectsheader">Programming & AI</p>
-                        <p id="text">I have been programming for a little over 2 years and I have learned many different things. During these two years I have had different goals, but one has stayed with me for long; to learn AI and machine learning. </p class="text">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <section>
-        <div class="container">
-            <p class="pheaders">My Projects</p>
-            <div class="projects" id="special">
-                
-                <div class="projectanimation">
-                    <div class="project1">
-                        <p id="projectsheader">Python Code Editor</p>
-                        <p id="text">This is a code editor for python made in Java. It has inbuilt coloring of keywords and a terminal. I'm planning to make a new editor with Electron in JS, but this is the best I have for now!
-                        <button onclick="location.href='https://github.com/Cqsi/texteditor'" type="button">Source Code</button>
-                    </div>
-                </div>
-                <div class="projectanimation">
-                    <div class="project2">
-                        <p id="projectsheader">Todoist in Terminal</p>
-                        <p id="text">Todoist is an app where you can organize your life by setting up tasks and the n completing them. They have a website which works fine, but I made it work in the terminal, because we programmers are lazy.
-                        <button onclick="location.href='https://github.com/Cqsi/terminal-todoist'" type="button">Source Code</button>
-                    </div>
-                </div>
-                <div class="projectanimation">
-                    <div class="project3">
-                        <p id="projectsheader">Minor Python Projects</p>
-                        <p id="text">Minor Python Projects is just a bunch of small Python projects that I made. The library includes e.g. Github Automation, PeriodicElements and a pi memorization tool. Have fun cheking them out!</p class="text">
-                        <button onclick="location.href='https://github.com/Cqsi/minor-python-projects'" type="button">Source Code</button>
-                    </div>
-                </div>   
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <p><a href="#">Casimir Rönnlöf</a>, Copyright &copy; 2020</p>
-    </footer>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-    <script src="js/burger.js"></script>
-    <script src="js/rainbowdots.js"></script>
-</body>
-</html>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
