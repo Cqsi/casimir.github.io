@@ -18,16 +18,16 @@ avatar: https://github.com/Cqsi.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: casimirr04@gmail.com
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: Cqsi
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  twitter: CasimirRonnlof
+  stackoverflow: "users/9289979/casimir-rönnlöf"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
