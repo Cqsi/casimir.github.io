@@ -1,1 +1,1 @@
-My website that's hosted with Github Pages nad partially made with Jekyll (it's an awesome combination!).
+My website that's hosted with Github Pages and partially made with Jekyll (it's an awesome combination!).
