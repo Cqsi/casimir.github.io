@@ -1,11 +1,11 @@
 ---
 layout: post
-title: My first blog post!
+title:  "My first blog post!"
+author: "Casimir Rönnlöf"
+comments: false
 ---
 
-__Hello reader!__
-<br />
-<br />
+## Hello reader!
 This is my first blog post here. In this blog you're going to find (eventually and hopefully) a lot of technical stuff, ranging from mathematics to programming to machine learning. There are two reason for me starting this blog:
 
 1. I want to confirm my understanding on a subject by writing a post on it.
