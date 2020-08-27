@@ -65,9 +65,11 @@ canvas {
     flex: 1; 
 }
 
+/*
 .container .project3 {
     flex: 1;
 }
+*/
 
 .container .special-link p a {
     text-decoration: none;
